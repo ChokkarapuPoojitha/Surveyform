@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="styles.css">
+<h1 id="title">Survey Form</h1>
+<p id="description">With this survey we get to know your opinion of the site and we can improve our site with the suggestions.
+  <form id="survey-form">
+    <section class="Name">
+      
+    <label for="name" id="name-label">Name:</label>
+    
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+</section>
+<section class="Email">
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" placeholder="Enter your email" id="email" required>
+     </section>
+    <section class="Age">
+    <label for="Age" id="number-label">Age:</label>
+    <input type="number" id="number" placeholder="age" min="15" max="25" require pattern="[0-9]">
+    </section>
+    <section class="Gender">
+      <label for="gender">Select your Gender</label>
+    <select id="dropdown">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      </select>
+      </section>
+      <section class="Rating">
+        <span>Did you like our site</span>
+        <div>
+        <input type="Radio" id="yes" name="radio" value="yes">
+        <label for="yes">Yes</label>
+        <input type="Radio" id="No" name="radio" value="no">
+        <label for="no">No</label>
+        </div>
+        </section>
+        <section class="Checkbox">
+        <label>What would you like to see improved?</label>
+          <div>
+        <label for="Sure">Frontend projects</label>
+        <input type="checkbox" id="Sure" name="Sure" value="Sure">
+        </div>
+        <div>
+        <label>Backend projects</label>
+        <input type="checkbox" id="Not at all" name="Backend projects" value="Not at all">
+        </div>
+        <div>
+        <label>Videos</label>
+        <input type="checkbox" id="videos" name="videos" value="challenges">
+        </div><div>
+        <label>Challenges</label>
+        <input type="checkbox" value="challenges">
+        </div>
+        </section>
+        <section class="Extra">
+          <label for="Extra">Anythig else you want to convey?</label>
+          <textarea id="Extra" name="Extra" rows="18" cols="30">
+            </textarea>
+            </section>
+            <section class="Recommend">
+              <label for="Recommend">Would you recommend about our source to your friend? 
+                <div>
+                <input type="Radio" id="Sure" name="radio" value="Sure">
+                <label>Sure</label>
+                </div>
+                <div>
+                <input type="Radio" id="Not at all" name="radio"value="Not at all">
+                <label>Not at all</label>
+                </div><div>
+                <input type="Radio" id="Definetly" name="radio" value="Definetly">
+                <label>Definetly</label>
+                </div>
+                </section>
+ 
+            <section class="submit">
+              <button id="submit">Submit</button>
+              </section>
+
